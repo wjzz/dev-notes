@@ -12,6 +12,10 @@
 
 * Django Girls (https://tutorial.djangogirls.org/en/)
 
+## GUI
+
+* PySimpleGUI (https://pysimplegui.readthedocs.io/)
+
 # Good books
 
 * How to automate the boring stuff with Python (https://automatetheboringstuff.com/)
