@@ -27,6 +27,10 @@
 
 # TypeScript notes
 
+## Guides and books
+
+* [New handbook](https://microsoft.github.io/TypeScript-New-Handbook/everything/)
+
 ## Nice articles
 
 * [Strict null checking](https://github.com/mjbvz/vscode-strict-null-check-migration-tools)
