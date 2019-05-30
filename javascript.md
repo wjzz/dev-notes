@@ -34,6 +34,7 @@
 ## Nice articles
 
 * [Strict null checking](https://github.com/mjbvz/vscode-strict-null-check-migration-tools)
+* [Interface vs type](https://pawelgrzybek.com/typescript-interface-vs-type/)
 
 ## OS Projects
 
