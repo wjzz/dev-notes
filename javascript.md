@@ -19,6 +19,7 @@
 * enzyme (https://airbnb.io/enzyme/)
 * mocha
 * chai
+* jest
 
 ## Learn JS by coding avatars
 
