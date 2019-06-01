@@ -9,6 +9,7 @@
 * [Immutable.js - immutable data structures](https://github.com/immutable-js/immutable-js)
 * [setState](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/)
 * [Roadmap](https://reacttraining.com/courses/)
+* [Mobx](https://github.com/mobxjs/mobx)
 
 ## Ajax
 
