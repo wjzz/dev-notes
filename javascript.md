@@ -40,6 +40,10 @@
 * [Strict null checking](https://github.com/mjbvz/vscode-strict-null-check-migration-tools)
 * [Interface vs type](https://pawelgrzybek.com/typescript-interface-vs-type/)
 
+## Links
+
+* [DefinitelyTyped TS resources](http://definitelytyped.org/directory/learn.html)
+
 ## OS Projects
 
 * [Lichess](https://github.com/ornicar/lila/tree/master/ui)
