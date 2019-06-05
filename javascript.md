@@ -3,6 +3,16 @@
 ## Books
 
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+* [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+## Tutorials
+
+* [JS Full Stack Open 2019 (MOOC from Finland)](https://eloquentjavascript.net/)
+* [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+
+## References
+
+* [MDN](https://developer.mozilla.org/en-US/docs/Web)
 
 ## React
 
@@ -12,10 +22,12 @@
 * [setState](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/)
 * [Roadmap](https://reacttraining.com/courses/)
 * [Mobx](https://github.com/mobxjs/mobx)
+* [React as an Implementation Details](https://chriskiehl.com/article/react-as-an-implementation-detail)
 
 ## Ajax
 
 * [JSON Placeholder](https://jsonplaceholder.typicode.com/)
+* [Axios](https://github.com/axios/axios)
 
 ## Testing
 
@@ -25,6 +37,11 @@
 * mocha
 * chai
 * jest
+
+## Other libraries
+
+* [Chart.js](https://www.chartjs.org/)
+* [NeDB - A very simple DB in JS](https://github.com/louischatriot/nedb)
 
 ## Learn JS by coding avatars
 
