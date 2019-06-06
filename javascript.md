@@ -7,7 +7,7 @@
 
 ## Tutorials
 
-* [JS Full Stack Open 2019 (MOOC from Finland)](https://eloquentjavascript.net/)
+* [JS Full Stack Open 2019 (MOOC from Finland)](https://fullstackopen.com/en/)
 * [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
 ## References
