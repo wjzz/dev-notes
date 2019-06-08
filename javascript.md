@@ -13,6 +13,7 @@
 ## References
 
 * [MDN](https://developer.mozilla.org/en-US/docs/Web)
+* [State of JavaScript 2018 - ranks of various libraries](https://2018.stateofjs.com/front-end-frameworks/other-libraries/)
 
 ## React
 
