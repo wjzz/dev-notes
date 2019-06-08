@@ -32,6 +32,7 @@
 
 * [setState](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/)
 * [Nice introduction with 51 interview questions](https://www.opencodez.com/reactjs/reactjs-an-introduction.htm)
+* [Getting started with Create React App - quite indepth](https://blog.logrocket.com/getting-started-with-create-react-app-d93147444a27/)
 
 ## Ajax
 
