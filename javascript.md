@@ -24,6 +24,10 @@
 * [Mobx](https://github.com/mobxjs/mobx)
 * [React as an Implementation Details](https://chriskiehl.com/article/react-as-an-implementation-detail)
 
+### React tutorials
+
+* [Nice introduction with 51 interview questions](https://www.opencodez.com/reactjs/reactjs-an-introduction.htm)
+
 ## Ajax
 
 * [JSON Placeholder](https://jsonplaceholder.typicode.com/)
