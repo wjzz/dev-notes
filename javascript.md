@@ -42,6 +42,10 @@
 * chai
 * jest
 
+## Web frameworks
+
+* [Svelte](https://svelte.dev/)
+
 ## Other libraries
 
 * [Chart.js](https://www.chartjs.org/)
