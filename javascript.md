@@ -16,16 +16,21 @@
 
 ## React
 
+### Useful libraries to use with React
+
 * [React-router](https://reacttraining.com/react-router/web/guides/quick-start)
 * [React-responsive](https://github.com/contra/react-responsive)
 * [Immutable.js - immutable data structures](https://github.com/immutable-js/immutable-js)
-* [setState](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/)
 * [Roadmap](https://reacttraining.com/courses/)
 * [Mobx](https://github.com/mobxjs/mobx)
-* [React as an Implementation Details](https://chriskiehl.com/article/react-as-an-implementation-detail)
+
+### Articles
+
+* [React as an Implementation Detail](https://chriskiehl.com/article/react-as-an-implementation-detail)
 
 ### React tutorials
 
+* [setState](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/)
 * [Nice introduction with 51 interview questions](https://www.opencodez.com/reactjs/reactjs-an-introduction.htm)
 
 ## Ajax
