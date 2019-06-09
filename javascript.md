@@ -9,6 +9,7 @@
 
 * [JS Full Stack Open 2019 (MOOC from Finland)](https://fullstackopen.com/en/)
 * [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+* [Road to React](https://roadtoreact.com)
 
 ## References
 
@@ -35,6 +36,9 @@
 * [Nice introduction with 51 interview questions](https://www.opencodez.com/reactjs/reactjs-an-introduction.htm)
 * [Getting started with Create React App - quite indepth](https://blog.logrocket.com/getting-started-with-create-react-app-d93147444a27/)
 
+### Testing React Apps
+* [Enzyme](https://airbnb.io/enzyme/)
+
 ## Ajax
 
 * [JSON Placeholder](https://jsonplaceholder.typicode.com/)
@@ -44,10 +48,9 @@
 
 * [Nice intro article](https://medium.com/feedzaitech/javascript-and-react-unit-tests-basics-324e93dfc64c)
 * sinon
-* enzyme (https://airbnb.io/enzyme/)
 * mocha
 * chai
-* jest
+* Jest
 
 ## Web frameworks
 
