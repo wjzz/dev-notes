@@ -54,3 +54,29 @@ $ npm test
 
 *Note*: The `--watch` flag helps a lot with live-coding.
 *Note*: The ` || true` part silences the npm (it will print an stack trace when a test fails).
+
+# HOWTO Generate nice HTML reports
+
+1. Install [`mochawesome`](https://www.npmjs.com/package/mochawesome)
+
+```
+$ npm install --save-dev mochawesome
+```
+
+2. Update the `package.json` like this:
+
+```
+  "scripts": {
+    "test": "mocha --watch --reporter mochawesome --reporter-options json=false,quiet=true || true"
+  },
+```
+
+For details, see the [mochawesome documentation](https://www.npmjs.com/package/mochawesome), it's very simple and nice.
+
+3. The html documentation will be automatically generated every time you run
+
+```
+$ npm test
+```
+
+(in watch mode it will be regenerated automatically after each change. To enable autorefresh in the browser you can use e.g. the Live-server package in Visual Studio Code).
