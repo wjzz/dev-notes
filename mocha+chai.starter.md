@@ -22,11 +22,35 @@ In `package.json` update the `test` command like this:
   },
 ```
 
-*Note*: The `--watch` flag helps a lot with live-coding.
-*Note*: The ` || true` part silences the npm (it will print an stack trace when a test fails).
+4. Create some example files:
 
-4. To run the tests, run:
+* Create a file *app.js* with the following content:
+
+```
+module.exports = {
+    myFun: () => "hello"
+}
+```
+
+* Create a `test` directory with a *appTest.js* file inside with the following content:
+```
+const myFun = require("../app").myFun;
+const expect = require('chai').expect;
+
+describe('App', () => {
+    it('myFun should return hello', () => {
+        const result = myFun();
+        expect(result).to.equal("hello");
+    })
+});
+```
+
+
+5. To run the tests, run:
 
 ```
 $ npm test
 ```
+
+*Note*: The `--watch` flag helps a lot with live-coding.
+*Note*: The ` || true` part silences the npm (it will print an stack trace when a test fails).
