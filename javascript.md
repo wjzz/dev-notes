@@ -48,7 +48,7 @@
 
 * [Nice intro article](https://medium.com/feedzaitech/javascript-and-react-unit-tests-basics-324e93dfc64c)
 * sinon
-* mocha
+* mocha, [mochawesome - html reports](https://www.npmjs.com/package/mochawesome)
 * chai
 * Jest
 * Cypress (end to end testing)
