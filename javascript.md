@@ -51,6 +51,7 @@
 * mocha
 * chai
 * Jest
+* Cypress (end to end testing)
 
 ## Web frameworks
 
