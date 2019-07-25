@@ -16,6 +16,14 @@
 * [MDN](https://developer.mozilla.org/en-US/docs/Web)
 * [State of JavaScript 2018 - ranks of various libraries](https://2018.stateofjs.com/front-end-frameworks/other-libraries/)
 
+## Redux
+
+* [Nice video tutorial by Dan Abramov (2h)](https://egghead.io/courses/getting-started-with-redux)
+
+### Redux-saga
+
+* [Nice tutorial](https://flaviocopes.com/redux-saga/)
+
 ## React
 
 ### Useful libraries to use with React
@@ -43,6 +51,7 @@
 
 * [JSON Placeholder](https://jsonplaceholder.typicode.com/)
 * [Axios](https://github.com/axios/axios)
+* [JSON-server - test your API in 30 seconds](https://github.com/typicode/json-server)
 
 ## Testing
 
