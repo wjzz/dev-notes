@@ -12,6 +12,8 @@ $ git config -l
 Show list of everything you did in git:
 ```
 $ git reflog
+...
+git reset HEAD@{index}      # TIME MACHINE!
 ```
 
 ## Loging
