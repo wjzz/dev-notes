@@ -13,7 +13,7 @@ Show list of everything you did in git:
 ```
 $ git reflog
 ...
-git reset HEAD@{index}      # TIME MACHINE!
+$ git reset HEAD@{index}      # TIME MACHINE!
 ```
 
 ## Staging parts of a change
