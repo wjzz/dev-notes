@@ -16,7 +16,7 @@ $ git reflog
 git reset HEAD@{index}      # TIME MACHINE!
 ```
 
-## Loging
+## Logging
 
 Show all commits in a short way:
 ```
