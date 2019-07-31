@@ -39,6 +39,7 @@ Stash current changes (useful when one needs to go back to a different branch or
 
 ```
 $ git stash
+$ git stash save "my new readme"   # save with a name
 ```
 
 Unstash:
@@ -109,4 +110,7 @@ git reset HEAD .gitignore   # unstage .gitignore
 
 [Git handbook](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
 
+## Fixing stuff
+
 [Oh, shit, git](https://ohshitgit.com/)
+[On undoing, fixing...](https://sethrobertson.github.io/GitFixUm/fixup.html)
