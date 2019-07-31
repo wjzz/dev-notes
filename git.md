@@ -69,6 +69,11 @@ $ git checkout REF              # e.g. REF = master, branchName, HEAD, HEAD^ etc
 $ git checkout -b BRANCH_NAME   # shortcut - create branch and checkout
 ```
 
+Make a branch point to a different node:
+```
+$ git branch -f master HEAD^^^       # make master point to HEAD^^^
+```
+
 ## Merging
 
 Merging connects two seperate branches. Workflow:
@@ -95,7 +100,7 @@ $ git rebase newBrach   # this changes
 # now master contains all the changes done in newBranch
 ```
 
-## Undo and update commits
+## Undo and update local commits
 
 Undo the last commit (changes are still preserved)
 ```
@@ -104,6 +109,14 @@ $ git reset --soft HEAD^  # updates the index, preserves the changes and keeps t
 $ git reset --hard HEAD^  # updates the index and removes the changes
 ```
 You can replace `HEAD^` with the commit name to go further back in history.
+
+## Undo and update shared commits
+
+For commits that are pushed we should create a commit that reverses some given changes:
+
+```
+$ git revert ref       # create a commit that will undo everything done by commit <ref>
+```
 
 ## Stashing files
 
@@ -162,6 +175,7 @@ $ git ls-files --others --ignored --exclude-standard
 $ git diff                  # show in terminal
 $ git difftool              # show in configured difftool
 $ git diff --name-only      # print only file names 
+$ git diff HEAD^^           # compare with some previous node
 ```
 
 For staged changes:
@@ -176,6 +190,15 @@ $ git difftool --cashed             # show in configured difftool
 ```
 git reset HEAD .gitignore   # unstage .gitignore
 ```
+
+## Cherry-picking
+
+We can pick some comments to be copied (replayed) below `HEAD`:
+
+```
+$ git cherry-pick Commit1 Commit2 ...
+```
+
 # Resources:
 
 [Learn git branching (very nice!)](https://learngitbranching.js.org/)
