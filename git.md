@@ -110,6 +110,12 @@ $ git merge newBrach
 # now master contains all the changes done in newBranch
 ```
 
+In case there are conflicts: 
+
+```
+$ git mergetool
+```
+
 ## Rebasing
 
 Rebasing is similar to merging in that it allows us to add some changes from a different branch, but rebasing replays and copies the commits on top of e.g. `master`. This results in a linear history. Example
