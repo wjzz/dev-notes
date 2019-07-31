@@ -50,6 +50,14 @@ To find out what is the closest tagged ancestor node and how many commits away i
 $ git describe ref
 ```
 
+## Bisecting
+
+```
+$ git bisect start BAD_REF GOOD_REF
+$ git bisect run TEST_COMMAND
+$ git bisect reset
+```
+
 ## Staging parts of a change
 
 ```
