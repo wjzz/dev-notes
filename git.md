@@ -35,6 +35,21 @@ $ git reflog
 $ git reset HEAD@{index}      # TIME MACHINE!
 ```
 
+## Tagging and describig
+
+To add a tag:
+
+```
+$ git tag v1      # defaults to HEAD  
+$ git tag v2 ref 
+```
+
+To find out what is the closest tagged ancestor node and how many commits away it is located:
+
+```
+$ git describe ref
+```
+
 ## Staging parts of a change
 
 ```
@@ -98,6 +113,11 @@ $ git commit
 $ git checkout master
 $ git rebase newBrach   # this changes
 # now master contains all the changes done in newBranch
+```
+
+Interactive rebasing (it allows you to pick and reorder commits):
+```
+$ git rebase -i ref          # rebase commits after <ref> until HEAD
 ```
 
 ## Undo and update local commits
