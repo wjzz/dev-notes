@@ -13,8 +13,6 @@ We can reference each node by it's hash (or by it's unique prefix), but we also 
 * `ref^` refers to the parent of `ref`, e.g. `HEAD^` means the "parent of `HEAD`", `HEAD^^` means the parent of the parent of `HEAD` etc.
 * `ref~NUM` to refers to the `NUM`th ancestor of `ref`, e.g. `HEAD~2` is equivalent to `HEAD^^`
 
-`HEAD`
-
 # Some useful git commands
 
 Show configuration:
