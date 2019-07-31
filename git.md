@@ -16,6 +16,12 @@ $ git reflog
 git reset HEAD@{index}      # TIME MACHINE!
 ```
 
+## Staging parts of a change
+
+```
+$ git add -p             # enters an interactive shell, type ? to see explanations
+```
+
 ## Logging
 
 Show all commits in a short way:
