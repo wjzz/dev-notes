@@ -122,7 +122,7 @@ git reset HEAD .gitignore   # unstage .gitignore
 
 [Pro Git](https://git-scm.com/book/en/v2)
 
-[The Git Parable](https://jwiegley.github.io/git-from-the-bottom-up/)
+[Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)
 
 [Git best practices](http://sethrobertson.github.io/GitBestPractices/)
 
