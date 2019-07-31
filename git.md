@@ -22,6 +22,12 @@ $ git reset HEAD@{index}      # TIME MACHINE!
 $ git add -p             # enters an interactive shell, type ? to see explanations
 ```
 
+## Removing files not under VC
+
+```
+$ git clean -n      # dry run
+```
+
 ## Logging
 
 Show all commits in a short way:
@@ -114,7 +120,9 @@ git reset HEAD .gitignore   # unstage .gitignore
 
 [Git cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
 
-[Git handbook](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
+[Pro Git](https://git-scm.com/book/en/v2)
+
+[Git best practices](http://sethrobertson.github.io/GitBestPractices/)
 
 ## Fixing stuff
 
