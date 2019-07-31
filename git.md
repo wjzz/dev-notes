@@ -9,6 +9,14 @@ Show configuration:
 $ git config -l
 ```
 
+## Undo and update commits
+
+Undo the last commit (changes are still preserved)
+```
+$ git reset HEAD^         # change preserved, but files are not staged
+$ git reset --soft HEAD^  # changes preserved and files are still staged
+```
+
 ## Stashing files
 
 Stash current changes (useful when one needs to go back to a different branch or commit)
@@ -84,3 +92,5 @@ git reset HEAD .gitignore   # unstage .gitignore
 [Git cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
 
 [Git handbook](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
+
+[Oh, shit, git](https://ohshitgit.com/)
