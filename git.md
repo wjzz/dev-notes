@@ -1,6 +1,19 @@
-# Git resources
+# Git notes
 
-My merge tool = `kdiff3`
+My merge tool used to be `kdiff3` but nowadays VSCode seems to have everything require for coding.
+
+# Concepts
+
+We should think about git's history as a DAG (Directed Acyclic Graph), where each commit becomes a node and it points to it's parent note (or parents node in case of merges). Branches etc then become pointers/references to various node. 
+* Each commit's hash is a reference to the commit's node
+* Branches names like `master`, `myBranch` etc point to the latest commit in the given path
+* HEAD points the commit that we currently work on (ie. if we make a new commit, it's parent will be node pointed by HEAD - HEAD will be moved immediately)
+
+We can reference each node by it's hash (or by it's unique prefix), but we also have relative references:
+* `ref^` refers to the parent of `ref`, e.g. `HEAD^` means the "parent of `HEAD`", `HEAD^^` means the parent of the parent of `HEAD` etc.
+* `ref~NUM` to refers to the `NUM`th ancestor of `ref`, e.g. `HEAD~2` is equivalent to `HEAD^^`
+
+`HEAD`
 
 # Some useful git commands
 
@@ -117,6 +130,8 @@ $ git difftool --cashed             # show in configured difftool
 git reset HEAD .gitignore   # unstage .gitignore
 ```
 # Resources:
+
+[Learn git branching (very nice!)](https://learngitbranching.js.org/)
 
 [Git cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
 
