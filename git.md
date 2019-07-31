@@ -9,13 +9,27 @@ Show configuration:
 $ git config -l
 ```
 
+Show list of everything you did in git:
+```
+$ git reflog
+```
+
+## Loging
+
+Show all commits in a short way:
+```
+$ git log --abbrev-commit --pretty=oneline
+```
+
 ## Undo and update commits
 
 Undo the last commit (changes are still preserved)
 ```
 $ git reset HEAD^         # change preserved, but files are not staged
-$ git reset --soft HEAD^  # changes preserved and files are still staged
+$ git reset --soft HEAD^  # updates the index, preserves the changes and keeps the files staged
+$ git reset --hard HEAD^  # updates the index and removes the changes
 ```
+You can replace `HEAD^` with the commit name to go further back in history.
 
 ## Stashing files
 
