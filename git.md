@@ -15,6 +15,14 @@ We can reference each node by it's hash (or by it's unique prefix), but we also 
 
 # Some useful git commands
 
+Git's help is really nice. When in doubt try:
+
+```
+$ git --help
+# or 
+$ git log --help       # concrete function
+```
+
 Show configuration:
 ```
 $ git config -l
