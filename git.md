@@ -40,6 +40,12 @@ $ git stash show 0
 $ git stash show 0 -p          # show the changes
 ```
 
+Clean-up:
+```
+$ git stash drop 1      # drop stash stash@1
+$ git stash clear       # remove all stashes
+```
+
 ## Listing files
 
 List all tracked files:
