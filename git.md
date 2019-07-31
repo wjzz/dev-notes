@@ -129,4 +129,5 @@ git reset HEAD .gitignore   # unstage .gitignore
 ## Fixing stuff
 
 [Oh, shit, git](https://ohshitgit.com/)
+
 [On undoing, fixing...](https://sethrobertson.github.io/GitFixUm/fixup.html)
