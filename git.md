@@ -8,7 +8,39 @@ Show configuration:
 ```
 $ git config -l
 ```
-## List files
+
+## Stashing files
+
+Stash current changes (useful when one needs to go back to a different branch or commit)
+
+```
+$ git stash
+```
+
+Unstash:
+```
+$ git stash pop        # applies changes and removes the stash
+$ git stash apply      # applies changes but keeps the stash
+```
+
+See available stashes
+```
+$ git stash list
+```
+
+With example output:
+```
+> stash{0}
+> stash{1}
+```
+
+You can see the changes by
+```
+$ git stash show 0
+$ git stash show 0 -p          # show the changes
+```
+
+## Listing files
 
 List all tracked files:
 ~~~
