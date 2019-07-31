@@ -44,6 +44,47 @@ $ git clean -n      # dry run
 Show all commits in a short way:
 ```
 $ git log --abbrev-commit --pretty=oneline
+$ git log --graph                               # show the tree structure of the commits
+```
+
+## Branching and checkouting
+
+Some operations on branches:
+```
+$ git branch NAME          # create branch
+$ git branch -d NAME       # delete branch (should be fully merged)
+```
+
+Changing HEAD to a different commit:
+```
+$ git checkout REF              # e.g. REF = master, branchName, HEAD, HEAD^ etc
+$ git checkout -b BRANCH_NAME   # shortcut - create branch and checkout
+```
+
+## Merging
+
+Merging connects two seperate branches. Workflow:
+
+```
+$ git checkout -b newBranch
+$ ... make some changes
+$ git commit
+$ git checkout master
+$ git merge newBrach
+# now master contains all the changes done in newBranch
+```
+
+## Rebasing
+
+Rebasing is similar to merging in that it allows us to add some changes from a different branch, but rebasing replays and copies the commits on top of e.g. `master`. This results in a linear history. Example
+
+```
+$ git checkout -b newBranch
+$ ... make some changes
+$ git commit
+$ git checkout master
+$ git rebase newBrach   # this changes
+# now master contains all the changes done in newBranch
 ```
 
 ## Undo and update commits
