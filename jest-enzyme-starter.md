@@ -220,7 +220,7 @@ And we are done!
 
 ## Enable Continuos Integration using Travis CI
 
-Create a `travis.yml` file in the root directory of the project:
+1. Create a `travis.yml` file in the root directory of the project:
 
 ```
 language: node_js
@@ -232,8 +232,11 @@ script:
   - npm test
 ```
 
+2. Put the repo on github
 
+3. Go to [Travis CI Homepage](https://travis-ci.org/), login with your Github credentials and enable CI (the default settings should be enough).
 
 ## Final repo
 
-TODO
+Repo:
+https://github.com/wjzz/tutorial-react-jest-enzyme
