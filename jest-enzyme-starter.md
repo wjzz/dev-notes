@@ -137,7 +137,9 @@ test("App is in sync with the snapshot", () => {
 
 ```
 
-If you run the tests now, Jest will create a snapshot in the src/__snapshot__ directory and during subsequent runs it will check if you haven't changed the snapshot. You will have to update the snapshot after you change the UI - Jest will ask you if it should update it once you run `npm test`.
+If you run the tests now, Jest will create a snapshot in the `src/__snapshot__` directory and during subsequent runs it will check if you haven't changed the snapshot. You will have to update the snapshot after you change the UI - Jest will ask you if it should update it once you run `npm test`. 
+
+__Note:__ I think the snapshots should be put under version control, they document your expectations nicely and snapshot testing will work with CI as well.
 
 ```
 $ npm test
