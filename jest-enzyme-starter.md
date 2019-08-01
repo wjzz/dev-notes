@@ -178,3 +178,30 @@ Snapshots:   1 passed, 1 total
 Time:        1.976s, estimated 2s
 Ran all test suites.
 ```
+
+## Install additional assertions with jest-enzyme
+
+1. Install the package: (`@types/jest-enzyme` is not available but the type definitions seem to be included)
+
+```
+$ npm i --save-dev jest-enzyme
+```
+
+2. Update the `src/setupTests.ts` file to contain:
+
+```
+import "jest-enzyme";
+```
+
+3. Now you can use many new assertions:
+https://www.npmjs.com/package/jest-enzyme#matchers
+
+For example we can add the following test to `src/App.tests.ts`:
+
+```
+it("works fine with jest-enzyme", () => {
+  const wrapper = shallow(<App />);
+
+  expect(wrapper).toIncludeText("Learn React");
+});
+```
