@@ -71,6 +71,12 @@ https://airbnb.io/enzyme/docs/installation/
 npm i --save-dev enzyme enzyme-adapter-react-16
 ```
 
+For TypeScript include the types as well:
+
+```
+npm i --save-dev @types/enzyme  @types/enzyme-adapter-react-16
+```
+
 2. Create (or update) the `src/setupTests.ts` (or .js if you don't use TypeScript) with the following contents:
 
 ```
@@ -103,4 +109,70 @@ it("works fine with enzyme", () => {
 
   expect(wrapper.text()).toContain("Learn React");
 });
+```
+
+## Enable snapshot testing
+
+We can now go ahead and add some snapshot testing as well:
+https://jestjs.io/docs/en/snapshot-testing
+
+```
+$ npm install --save-dev react-test-renderer @types/react-test-renderer
+```
+
+Update the test file as follows:
+
+```
+// ...
+
+import renderer from "react-test-renderer";
+
+test("App is in sync with the snapshot", () => {
+  const component = renderer.create(<App />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+// ....
+
+```
+
+If you run the tests now, Jest will create a snapshot in the src/__snapshot__ directory and during subsequent runs it will check if you haven't changed the snapshot. You will have to update the snapshot after you change the UI - Jest will ask you if it should update it once you run `npm test`.
+
+```
+$ npm test
+```
+
+Example output (first run):
+
+```
+ PASS  src/App.test.tsx
+  ✓ renders without crashing (19ms)
+  ✓ works fine with enzyme (5ms)
+  ✓ App is in sync with the snapshot (9ms)
+
+ › 1 snapshot written.
+Snapshot Summary
+ › 1 snapshot written from 1 test suite.
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   1 written, 1 total
+Time:        2.972s
+Ran all test suites related to changed files.
+```
+
+Example output (second run, no changes to the code):
+```
+...
+PASS src/App.test.tsx
+  ✓ renders without crashing (17ms)
+  ✓ works fine with enzyme (4ms)
+  ✓ App is in sync with the snapshot (8ms)
+  
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   1 passed, 1 total
+Time:        1.976s, estimated 2s
+Ran all test suites.
 ```
