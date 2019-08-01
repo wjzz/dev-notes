@@ -81,3 +81,26 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 ```
 
+3. Use Enzyme in tests.
+
+Update the `src/App.test.tsx` file to become:
+
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+import { shallow, mount, render } from "enzyme";
+
+it("renders without crashing", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
+});
+
+it("works fine with enzyme", () => {
+  const wrapper = shallow(<App />);
+
+  expect(wrapper.text()).toContain("Learn React");
+});
+```
