@@ -240,3 +240,6 @@ script:
 
 Repo:
 https://github.com/wjzz/tutorial-react-jest-enzyme
+
+Another example with some other example tests:
+https://github.com/wjzz/cs-books-react
