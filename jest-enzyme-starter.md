@@ -4,7 +4,7 @@ Written on 01.08.2019
 
 __Table of contents__:
 
-1. [Preliminaries]
+1. [Preliminaries](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#preliminaries)
 2. [Install Jest - the test runner (using Create React App)]
 3. [Install Enzyme - the renderer for React components]
 4. [Install React-test-renderer for snapshots]
