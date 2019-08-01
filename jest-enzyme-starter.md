@@ -220,7 +220,19 @@ And we are done!
 
 ## Enable Continuos Integration using Travis CI
 
-TODO
+Create a `travis.yml` file in the root directory of the project:
+
+```
+language: node_js
+node_js:
+  - "10.16"
+before_install:
+  - npm install -g typescript@3.5
+script:
+  - npm test
+```
+
+
 
 ## Final repo
 
