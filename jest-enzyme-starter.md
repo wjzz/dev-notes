@@ -2,7 +2,17 @@
 
 Written on 01.08.2019
 
-0. Preliminaries:
+__Table of contents__:
+
+1. [Preliminaries]
+2. [Install Jest - the test runner (using Create React App)]
+3. [Install Enzyme - the renderer for React components]
+4. [Install React-test-renderer for snapshots]
+5. [Install Jest-enzyme to get additional assertions]
+6. [Enable CI with Travis-CI]
+7. [See the final repo]
+
+## Preliminaries:
 
 ```
 $ node --version
@@ -205,3 +215,13 @@ it("works fine with jest-enzyme", () => {
   expect(wrapper).toIncludeText("Learn React");
 });
 ```
+
+And we are done!
+
+## Enable Continuos Integration using Travis CI
+
+TODO
+
+## Final repo
+
+TODO
