@@ -70,6 +70,7 @@
 
 * [Chart.js](https://www.chartjs.org/)
 * [NeDB - A very simple DB in JS](https://github.com/louischatriot/nedb)
+* [Thinking in Ramda](http://randycoulman.com/blog/categories/thinking-in-ramda/)
 
 ## Learn JS by coding avatars
 
