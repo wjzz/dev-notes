@@ -50,6 +50,7 @@
 ## Ajax
 
 * [JSON Placeholder](https://jsonplaceholder.typicode.com/)
+* [Pokemon API](https://pokeapi.co/)
 * [Axios](https://github.com/axios/axios)
 * [JSON-server - test your API in 30 seconds](https://github.com/typicode/json-server)
 
