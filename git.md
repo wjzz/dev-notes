@@ -125,13 +125,32 @@ $ git checkout -b newBranch
 $ ... make some changes
 $ git commit
 $ git checkout master
-$ git rebase newBrach   # this changes
+$ git rebase newBranch   # this changes
 # now master contains all the changes done in newBranch
 ```
 
 Interactive rebasing (it allows you to pick and reorder commits):
 ```
 $ git rebase -i ref          # rebase commits after <ref> until HEAD
+```
+
+## Removing unused branches
+
+Remove a local branch:
+```
+git branch -d BRANCH_NAME
+# something this is required:
+git branch -D BRANCH_NAME
+```
+
+Remove a remote branch:
+```
+git push --delete origin BRANCH_NAME
+```
+
+Remove local references for remote branches that do not exist anymore:
+```
+git remote prune origin --dry-run  # remove the --dry-run to actually run this
 ```
 
 ## Undo and update local commits
