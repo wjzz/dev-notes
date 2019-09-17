@@ -130,6 +130,8 @@ https://jestjs.io/docs/en/snapshot-testing
 $ npm install --save-dev react-test-renderer @types/react-test-renderer
 ```
 
+__Note:__ An alternative package is called [enzyme-to-json](https://github.com/adriantoine/enzyme-to-json), with it you don't need the `component.toJSON();` call.
+
 Update the test file as follows:
 
 ```
