@@ -11,7 +11,7 @@ __Table of contents__:
 5. [Install Jest-enzyme to get additional assertions](#install-additional-assertions-with-jest-enzyme)
 6. [Enable CI with Travis-CI](#enable-continuos-integration-using-travis-ci)
 7. [See the final repo](#final-repo)
-8. [Further links](#futher-links)
+8. [Further links](#further-links)
 
 ## Preliminaries:
 
