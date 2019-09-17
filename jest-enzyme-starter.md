@@ -5,12 +5,13 @@ Written on 01.08.2019
 __Table of contents__:
 
 1. [Preliminaries](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#preliminaries)
-2. [Install Jest - the test runner (using Create React App)](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#initial-setup-with-create-react-app-this-will-install-and-configure-jest-automatically)
-3. [Install Enzyme - the renderer for React components](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#install-enzyme-for-react-16)
-4. [Install React-test-renderer for snapshots](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#enable-snapshot-testing)
-5. [Install Jest-enzyme to get additional assertions](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#install-additional-assertions-with-jest-enzyme)
-6. [Enable CI with Travis-CI](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#enable-continuos-integration-using-travis-ci)
-7. [See the final repo](https://github.com/wjzz/dev-notes/blob/master/jest-enzyme-starter.md#final-repo)
+2. [Install Jest - the test runner (using Create React App)](#initial-setup-with-create-react-app-this-will-install-and-configure-jest-automatically)
+3. [Install Enzyme - the renderer for React components](#install-enzyme-for-react-16)
+4. [Install React-test-renderer for snapshots](#enable-snapshot-testing)
+5. [Install Jest-enzyme to get additional assertions](#install-additional-assertions-with-jest-enzyme)
+6. [Enable CI with Travis-CI](#enable-continuos-integration-using-travis-ci)
+7. [See the final repo](#final-repo)
+8. [Further links](#futher-links)
 
 ## Preliminaries:
 
@@ -245,3 +246,8 @@ https://github.com/wjzz/tutorial-react-jest-enzyme
 
 Another example with some other example tests:
 https://github.com/wjzz/cs-books-react
+
+## Further links
+
+To read on mock testing, testing redux applications etc:
+https://circleci.com/blog/continuously-testing-react-applications-with-jest-and-enzyme/
