@@ -6,6 +6,12 @@ The Haskell Platform in apt-get is rather outdated (ghc v 8.0) so we install usi
 
 https://gitlab.haskell.org/haskell/ghcup
 
+```
+ghcup list
+ghcup install latest
+ghcup set 8.8.1
+```
+
 ## Upgrading cabal install
 
 https://stackoverflow.com/questions/27102858/cabal-install-cabal-install-errors-out-on-linux?rq=1
