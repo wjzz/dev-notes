@@ -15,3 +15,8 @@ ghcup set 8.8.1
 ## Upgrading cabal install
 
 I found out that I had multiple versions of cabal installed (using `which -a cabal`). Updating the `PATH` so that the latest one is first helped.
+
+```
+cabal update
+cabal new-install cabal-install
+```
