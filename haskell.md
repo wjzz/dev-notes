@@ -20,3 +20,14 @@ I found out that I had multiple versions of cabal installed (using `which -a cab
 cabal update
 cabal new-install cabal-install
 ```
+
+## Installing stack
+
+https://docs.haskellstack.org/en/stable/README/
+
+## Upgrading stack
+
+```
+stack upgrade
+stack update
+```
