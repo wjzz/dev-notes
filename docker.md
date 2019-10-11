@@ -17,7 +17,16 @@ Voila!
 ## Restart docker
 
 ```
+sudo service docker stop
+sudo service docker start
 sudo service docker restart
+```
+
+## Check docker version
+
+```
+docker --version   ## short info
+docker version     ## full info
 ```
 
 ## Port already in use solution
