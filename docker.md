@@ -16,6 +16,12 @@ Log out and log in
 
 Voila!
 
+## Docker disc usage
+
+```
+docker system df
+```
+
 ## Restart docker
 
 ```
