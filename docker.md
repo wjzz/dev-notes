@@ -19,3 +19,12 @@ Voila!
 ```
 sudo service docker restart
 ```
+
+## Port already in use solution
+
+If the postgres deamon is already running, there might be a conflict
+
+```
+sudo lsof -i -P -n | grep 5432
+sudo kill <process-id>
+```
