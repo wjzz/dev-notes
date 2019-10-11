@@ -1,4 +1,6 @@
-# Installing docker on Ubuntu 18
+# Docker notes
+
+## Installing docker on Ubuntu 18
 
 Source: https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
 
@@ -27,6 +29,7 @@ sudo service docker restart
 ```
 docker --version   ## short info
 docker version     ## full info
+docker info
 ```
 
 ## Port already in use solution
