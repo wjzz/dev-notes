@@ -84,12 +84,15 @@ Some operations on branches:
 ```
 $ git branch NAME          # create branch
 $ git branch -d NAME       # delete branch (should be fully merged)
+$ git branch -D NAME       # force delete branch
+$ git branch -m OLD_NAME NEW_NAME # rename branch
 ```
 
 Changing HEAD to a different commit:
 ```
 $ git checkout REF              # e.g. REF = master, branchName, HEAD, HEAD^ etc
 $ git checkout -b BRANCH_NAME   # shortcut - create branch and checkout
+$ git checkout -                # rename to the previously checked-out branch
 ```
 
 Make a branch point to a different node:
