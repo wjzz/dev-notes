@@ -22,7 +22,9 @@ nano .bashrc
 # screen
 
 ```
+screen          # start screen
 Ctrl-a d        # detach session
+Ctrl-a n        # next screen tab
 screen -ls      # list all processes
 screen -r NAME  # reconnect to detached session
 ```
