@@ -1,0 +1,3 @@
+import decorators
+
+print("hello")
