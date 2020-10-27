@@ -4,6 +4,11 @@ from sys import (
 )
 
 from os import (
+    environ
+)
+
+from shutil import (
+    which
 )
 
 import os.path
@@ -39,6 +44,7 @@ from itertools import (
 
 from functools import (
     lru_cache,
+    # cache,     # new in python3.8
 )
 
 from csv import (
