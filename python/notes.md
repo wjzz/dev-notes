@@ -35,6 +35,16 @@ $ PYTHONDONTWRITEBYTECODE=1 python3 main.py
 
 ## Language features
 
+### CLI
+
+Useful trick to center a nice header:
+
+```
+>>> import shutil
+>>> print("hello".center((shutil.get_terminal_size().columns), "-"))
+------------------------------hello-------------------------------
+```
+
 ### Decorators
 
 #### Memoize a function using `@lru_cache`

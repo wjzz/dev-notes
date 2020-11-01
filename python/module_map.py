@@ -8,7 +8,10 @@ from os import (
 )
 
 from shutil import (
-    which
+    which,
+    disk_usage,
+    make_archive,
+    unpack_archive,
 )
 
 import os.path
