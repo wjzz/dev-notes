@@ -1,3 +1,7 @@
+from dis import (
+     dis,
+)
+
 from sys import (
     argv,
     path,
@@ -36,6 +40,7 @@ from math import (
 )
 
 import timeit
+
 from time import (
     time,
     perf_counter,
