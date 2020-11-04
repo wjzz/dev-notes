@@ -177,3 +177,20 @@ Upgrade package
 ```bash
 $ pip3 install mypy --upgrade
 ```
+
+## Bytecode
+
+Disasseble a function:
+```
+>>> def foo(x,y):
+...   return 2*x+y
+...
+>>> from dis import dis
+>>> dis(foo)
+  2           0 LOAD_CONST               1 (2)
+              2 LOAD_FAST                0 (x)
+              4 BINARY_MULTIPLY
+              6 LOAD_FAST                1 (y)
+              8 BINARY_ADD
+             10 RETURN_VALUE
+```
