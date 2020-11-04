@@ -8,6 +8,13 @@
 
 [Official docs](https://docs.python.org/3/using/cmdline.html)
 
+## Benchmarking
+
+```
+$ python3 -m timeit "1+1"
+50000000 loops, best of 5: 6.07 nsec per loop
+```
+
 ### Prevent python from creating `__pycache__` directiories
 
 There are two ways:
