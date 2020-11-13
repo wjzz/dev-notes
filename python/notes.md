@@ -42,6 +42,28 @@ $ PYTHONDONTWRITEBYTECODE=1 python3 main.py
 
 ## Language features
 
+### New in Python 3.9
+
+- Dictionary merging:
+```
+>>> dict(a=1) | dict(b=2)
+{'a': 1, 'b': 2}
+```
+
+- `list`, `dict` etc work as generic types:
+```
+>>> def first(l: list[str]) -> str:
+...   return l[0]
+...
+>>>
+```
+
+- `removeprefix` and `removesuffix`:
+```
+>>> "123".removeprefix("12")
+'3'
+```
+
 ### CLI
 
 Useful trick to center a nice header:
