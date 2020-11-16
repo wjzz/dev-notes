@@ -20,6 +20,8 @@ from shutil import (
 
 import os.path
 
+import pickle
+
 from collections import (
     defaultdict,
     namedtuple,

@@ -1,0 +1,9 @@
+README.md
+setup.py
+yo/__init__.py
+yo/main.py
+yo.egg-info/PKG-INFO
+yo.egg-info/SOURCES.txt
+yo.egg-info/dependency_links.txt
+yo.egg-info/entry_points.txt
+yo.egg-info/top_level.txt
