@@ -28,3 +28,11 @@ Available Java Versions
 ```
 sdk install java 8.0.275.open-adpt 
 ```
+
+**Setup jdk**
+
+```
+$ sdk default java 8.0.275.open-adpt 
+```
+
+For per-project basis setup use the [env command](https://sdkman.io/usage)
