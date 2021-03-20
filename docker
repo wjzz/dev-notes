@@ -27,6 +27,10 @@ docker run --name test -it debian
 ## run in background
 docker run -d -p 80:80 server
 
+# execute some commands inside container
+docker exec <id> ls /www/data
+docker exec -it <id> /bin/bash
+
 # start an existing container
 docker start <id>
 
