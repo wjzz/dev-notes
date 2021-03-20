@@ -1,0 +1,39 @@
+docker info
+
+docker logs <id>[
+
+# apline is a minimal linux image (5mb)
+docker pull alpine
+
+# build image from dockerfile
+docker build -f Dockerfile .
+
+# list running containers
+docker ps
+docker ps -q
+docker ps -a
+
+# list images
+docker images
+docker images -q
+
+# create and start a container
+docker run --name test -it debian
+
+# start an existing container
+docker start <id>
+
+# attach to existing process
+docker attach <id>
+
+docker stats
+
+docker rm # remove containers
+docker rmi # remove images
+docker container prune
+docker system prune    # remove all, including networks etc
+
+
+dockerfile -> docker build ->
+image -> docker run ->
+container
