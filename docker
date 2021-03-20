@@ -1,12 +1,14 @@
 docker info
 
-docker logs <id>[
+docker logs <id>
 
 # apline is a minimal linux image (5mb)
 docker pull alpine
 
 # build image from dockerfile
 docker build -f Dockerfile .
+# add a tag
+docker build -f dockerfile -t server .
 
 # list running containers
 docker ps
@@ -18,7 +20,12 @@ docker images
 docker images -q
 
 # create and start a container
+
+## interactive shell
 docker run --name test -it debian
+
+## run in background
+docker run -d -p 80:80 server
 
 # start an existing container
 docker start <id>
