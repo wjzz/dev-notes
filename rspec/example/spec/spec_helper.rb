@@ -1,4 +1,38 @@
+require 'capybara/rspec'
+require 'selenium-webdriver'
+
+# :selenium => Selenium driving Firefox
+# :selenium_headless => Selenium driving Firefox in a headless configuration
+# :selenium_chrome => Selenium driving Chrome
+# :selenium_chrome_headless => Selenium driving Chrome in a headless configuration
+
+# Capybara.register_driver :custom_headless_chrome do |app|
+#   Capybara::Selenium::Driver.new(app,
+#     browser: :chrome,
+#     desired_capabilities: Selenium::WebDriver::Remote::Capabilities.chrome(),
+#     options: Selenium::WebDriver::Chrome::Options.new(
+#       # args: %w(--lang=ja-JP)
+#       # args: %w(--headless --disable-gpu --lang=ja-JP)
+#     )
+#   )
+# end
+
+Capybara.register_driver :selenium_jp do |app|
+  ff_profile = Selenium::WebDriver::Firefox::Profile.new.tap do |profile|
+    profile['intl.accept_languages'] = "ja-JP"
+  end
+
+  ff_options = Selenium::WebDriver::Firefox::Options.new(profile: ff_profile)
+
+  ff_options.add_argument('-headless')
+  # ff_options.add_argument("window-size=#{CAPYBARA_WINDOW_SIZE.join(',')}"
+
+  Capybara::Selenium::Driver.new(app, browser: :firefox, options: ff_options)
+end
+
 RSpec.configure do |config|
+  Capybara.default_driver = :selenium_chrome
+
   config.around(:example) do |example|
     puts "--- start"
     example.run
