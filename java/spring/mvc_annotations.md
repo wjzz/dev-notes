@@ -6,6 +6,8 @@ Docs: https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-refere
 
 ```java
 public String controller(Model model) { ... }
+
+model.asMap() // get all attributes
 ```
 
 ## ModelAttribute
