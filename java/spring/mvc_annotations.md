@@ -80,8 +80,14 @@ This makes the path variable required. To handle a case where the path variable 
 public String controller(@PathVariable(value="id", required=false) String id) { ... }
 ```
 
-`id` will be `null` when `GET /hello` is performed. We can change the String type to `Optional<String>` as well.
+`id` will be `null` when `GET /hello` is performed. We can change the String type to `Optional<String>` as well (the `required=false` is not necessary):
 
+```java
+@GetMapping({"/hello/{id}", "/hello"})
+public String testPage(@PathVariable("id") Optional<String> id) { ... }    
+```
+
+The second way is a bit shorter and perphaps more type safe.
 
 ## Model
 
