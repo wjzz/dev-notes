@@ -64,6 +64,25 @@ As with cookies, this makes the parameter required and will throw an exception w
 @RequestParam(value="id", required=false, defaultValue = "defaultValue") String id) {
 ```
 
+## Path variables
+
+To get the value of a path variable we use the @PathVariable annotation (https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/PathVariable.html):
+
+```java
+@GetMapping("/hello/{id}")
+public String controller(@PathVariable("id") String id) { ... }
+```
+
+This makes the path variable required. To handle a case where the path variable is optional, we use a get mapping with multiple URLs:
+
+```java
+@GetMapping({"/hello/{id}", "/hello"})
+public String controller(@PathVariable(value="id", required=false) String id) { ... }
+```
+
+`id` will be `null` when `GET /hello` is performed. We can change the String type to `Optional<String>` as well.
+
+
 ## Model
 
 ```java
