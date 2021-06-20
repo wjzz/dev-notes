@@ -8,6 +8,21 @@ Docs: https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-refere
 public String controller(@CookieValue("JSESSIONID") String sessionID) { ... }
 ```
 
+This will get the cookie and if the cookie is not found, it will throw an Exception.
+
+To mark the cookie optional, we pass an additional argument to the annotation:
+
+```java
+public String controller(@CookieValue("JSESSIONID") String sessionID, required=false) { ... }
+```
+
+Now if the cookie is not present, a `null` value will be passed. We can also change the `String` type to `Optional<String>`.
+
+Another option is to add a default value:
+```java
+@CookieValue(value="JSESSIONID123", required=false, defaultValue = "defaultValue") String sessionID) {
+```
+
 ## Model
 
 ```java
