@@ -107,6 +107,26 @@ public String controller(@ModelAttribute("pet") Pet pet) { ... }
 ```
 Fetches the given attribute from the model
 
+## SessionAttribute
+
+@SessionAttribute
+
+```java
+@GetMapping("/session")
+public String sessionExample(@SessionAttribute("counter") Optional<Integer> counter,
+                           Model model,
+                           HttpSession session) {
+    log.info("counter = {}", counter);
+
+    int newValue = 1 + counter.orElse(0);
+
+    session.setAttribute("counter", newValue);
+    model.addAttribute("id", newValue);
+
+    return "/user/debug";
+}
+```
+
 ## Template
 
 ```java
