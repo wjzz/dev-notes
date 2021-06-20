@@ -44,11 +44,14 @@ To mark the cookie optional, we pass an additional argument to the annotation:
 public String controller(@CookieValue("JSESSIONID") String sessionID, required=false) { ... }
 ```
 
-Now if the cookie is not present, a `null` value will be passed. We can also change the `String` type to `Optional<String>`.
-
-Another option is to add a default value:
+Now if the cookie is not present, a `null` value will be passed. We can additionally add a default value:
 ```java
-@CookieValue(value="JSESSIONID123", required=false, defaultValue = "defaultValue") String sessionID) {
+@CookieValue(value="JSESSIONID", required=false, defaultValue = "defaultValue") String sessionID) {
+```
+
+Finally, we can use the `Optional<String>` type:
+```java
+@CookieValue("JSESSIONID") Optional<String> sessionID) {
 ```
 
 ## Request params (query parameters)
