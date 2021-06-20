@@ -2,6 +2,29 @@
 
 Docs: https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html
 
+## Classical servlet style
+
+We can still use the old Servlet style by declaring the `HttpServletRequest` and `HttpServletResponse` parameters in the controller. Spring will automatically inject the proper values here.
+
+```java
+@GetMapping("/old")
+public void testOldPatternsPage(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    final Optional<String> value = Arrays
+            .stream(request.getCookies())
+            .filter(cookie -> cookie.getName().equals("JSESSIONID"))
+            .map(cookie -> cookie.getValue())
+            .findFirst();
+    String cookieValue = value.orElse("cookie was not found");
+
+    PrintWriter out = response.getWriter();
+    out.println("This is an example response.");
+    out.println("The value of the JESSIONID cookie is: " + cookieValue);
+    out.flush();
+}
+```
+
+While we can continue using this old style, the annotation provided to us by Spring MVC allow us to write much shorter and cleaner code.
+
 ## Cookie
 
 ```java
