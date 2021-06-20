@@ -2,6 +2,8 @@
 
 Docs: https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html
 
+Supported controller method argument types: https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-ann-arguments
+
 ## Classical servlet style
 
 We can still use the old Servlet style by declaring the `HttpServletRequest` and `HttpServletResponse` parameters in the controller. Spring will automatically inject the proper values here.
@@ -25,7 +27,7 @@ public void testOldPatternsPage(HttpServletRequest request, HttpServletResponse 
 
 While we can continue using this old style, the annotation provided to us by Spring MVC allow us to write much shorter and cleaner code.
 
-## Cookie
+## Cookies
 
 Docs: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CookieValue.html
 
@@ -47,6 +49,19 @@ Now if the cookie is not present, a `null` value will be passed. We can also cha
 Another option is to add a default value:
 ```java
 @CookieValue(value="JSESSIONID123", required=false, defaultValue = "defaultValue") String sessionID) {
+```
+
+## Request params (query parameters)
+
+To get the value of a query parameter (eg. the value of `id` from `/debug?id=123` would be '123') we use the `@RequestParam` annotation:
+
+```java
+public String controller(@RequestParam("id") String id) { ... }
+```
+As with cookies, this makes the parameter required and will throw an exception when the parameter is missing. We can relax this restriction by using:
+
+```java
+@RequestParam(value="id", required=false, defaultValue = "defaultValue") String id) {
 ```
 
 ## Model
