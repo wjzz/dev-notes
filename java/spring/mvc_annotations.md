@@ -27,6 +27,9 @@ While we can continue using this old style, the annotation provided to us by Spr
 
 ## Cookie
 
+Docs: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CookieValue.html
+
+
 ```java
 public String controller(@CookieValue("JSESSIONID") String sessionID) { ... }
 ```
