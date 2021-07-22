@@ -41,7 +41,7 @@ This will get the cookie and if the cookie is not found, it will throw an Except
 To mark the cookie optional, we pass an additional argument to the annotation:
 
 ```java
-public String controller(@CookieValue("JSESSIONID") String sessionID, required=false) { ... }
+public String controller(@CookieValue(value="JSESSIONID", required=false) String sessionID) { ... }
 ```
 
 Now if the cookie is not present, a `null` value will be passed. We can additionally add a default value:
